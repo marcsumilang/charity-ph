@@ -1,0 +1,12 @@
+.btn-white {
+  color: #000;
+  background-color: $white;
+  border: 1px solid white;
+}
+
+.custom-button {
+  border-radius: 0;
+  &.custom-button-lg{
+    padding: 0.75rem 4rem;
+  }
+}

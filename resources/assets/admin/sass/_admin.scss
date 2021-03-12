@@ -1,0 +1,76 @@
+
+
+
+
+
+.table-order-items{
+  .thead-dark {
+    th {
+      background: $darkBlue;
+    }
+
+  }
+  .thead-yellow {
+    th ,td{
+      background: $darkYellow;
+    }
+  }
+  th{
+    font-size: .90rem;
+  }
+  td{
+    font-size: .90rem;
+  }
+}
+
+.fc-table {
+  font-size: .90rem;
+  height: 20px;
+  border-radius:0;
+}
+
+.wpx-500 {
+  width: 500px;
+}
+//.modal-backdrop{
+//  position: relative !important;
+//}
+
+.mb-4,
+.my-4 {
+  margin-bottom: -0.5rem !important;
+}
+
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
+
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+
+.btn-primary {
+  border-color: #3f51b5;
+  color: #3f51b5;
+}
+
+
+
+ul.pagination li a {
+  color: #3f51b5;
+}
+
+ul.pagination li.active {
+  background: #3f51b5;
+}
+
+.swal-footer {
+  text-align: center;
+}

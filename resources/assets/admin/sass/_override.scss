@@ -1,0 +1,13 @@
+.sidebar {
+  background: $darkBlue;
+  .sidebar-wrapper {
+    background: $darkBlue;
+  }
+  &:after {
+    background: $darkBlue;
+  }
+}
+
+.text-transparent {
+  color: transparent !important;
+}

@@ -1,0 +1,379 @@
+$darkBlue: #354463;
+$blueLine: #91B4FD;
+$white: #ffffff;
+$gray: #717171;
+$black: #000;
+
+$main-font: 'Open Sans',
+sans-serif;
+$font-mont: 'Montserrat',
+sans-serif;
+$heading-font :'Playfair Display',
+serif;
+$main_color: #288586;
+
+html,
+body {
+    //margin-top: 100px !important;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: $main-font;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+.h5,
+h5 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+a {
+    transition: all 0.2s ease;
+    outline: none;
+    cursor: pointer;
+    color: $darkBlue;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        text-decoration: none;
+    }
+}
+
+header {
+
+    //height: 98px;
+    .custom-navbar {
+        padding: 9px 1rem;
+    }
+}
+
+.custom-footer {
+    padding: 24px 1rem;
+}
+
+.footer-list {
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        padding-right: 0.8rem;
+        color: $gray;
+        font-size: 14px;
+
+    }
+}
+
+.sub-nav {
+    z-index: 10;
+
+    .btn {
+        font-size: 0.875rem;
+    }
+
+    span {
+        display: inline-block;
+        line-height: 1.7;
+        font-size: 0.875rem;
+
+    }
+}
+
+.main-sidebar {
+    background-color: $darkBlue;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    z-index: 80;
+    width: 0;
+    height: 100%;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+
+    &.active {
+        width: 65%;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .sidebar-wrapper {
+        display: none;
+
+        .sidebar-list {
+
+            list-style: none;
+
+            .sidebar-item {
+                padding: .5rem 2rem;
+
+                .sidebar-link {
+                    color: white;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+
+        &.show {
+            display: block;
+        }
+    }
+
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    position: fixed;
+
+    &.active {
+        display: block;
+    }
+}
+
+.menu-button {
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler {
+    border: 0px solid transparent;
+    position: relative;
+
+    &.collapsed span:nth-child(1) {
+        position: absolute;
+        left: 12px;
+        top: 10px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        opacity: 0.9;
+    }
+
+    &.collapsed span:nth-child(2) {
+        height: 12px;
+        visibility: hidden;
+        background-color: transparent;
+    }
+
+    &.collapsed span:nth-child(3) {
+        position: absolute;
+        left: 12px;
+        top: 10px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        opacity: 0.9;
+    }
+
+    span {
+        display: block;
+        background-color: #444;
+        height: 3px;
+        width: 25px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        position: relative;
+        left: 0;
+        opacity: 1;
+    }
+
+    span:nth-child(1),
+    span:nth-child(3) {
+        -webkit-transition: transform .35s ease-in-out;
+        -moz-transition: transform .35s ease-in-out;
+        -o-transition: transform .35s ease-in-out;
+        transition: transform .35s ease-in-out;
+    }
+
+}
+
+.nav-item {
+    .nav-link {
+        &.active {
+            color: $darkBlue !important;
+        }
+
+        &:hover {
+            color: $darkBlue !important;
+        }
+    }
+
+    a {
+        font-size: 1.125rem;
+
+    }
+}
+
+
+
+/*Added*/
+.container {
+    max-width: 1128px;
+}
+
+.article-object {
+    max-width: 480px;
+}
+
+
+
+#who {
+    padding: 25vh 0;
+
+    .article-object {
+        max-width: 480px;
+    }
+}
+
+#team {
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+#contact {
+
+    input[type=text],
+    textarea {
+        height: 48px;
+        border: 1px solid white;
+        @include border-radius(0px);
+        background: transparent;
+        color: $white;
+        text-indent: 10px;
+
+        &:focus {
+            color: $white;
+            border: 1px solid white;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: $white;
+        }
+    }
+
+    textarea {
+        height: 130px;
+        resize: none;
+    }
+}
+
+#careers {
+    min-height: 100vh;
+    .career-block {
+        color: #fff;
+        margin-top: 70px;
+    }
+
+    .block {
+        border-bottom: 1px dotted #999;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .container {
+        .row {
+            padding-top: 55px;
+        }
+    }
+}
+
+.donate-section {
+    margin-top: 100px;
+    background: url('../images/group-196.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20vh 0 10vh 0;
+    min-height: 100vh;
+    .accounts {
+        p {
+            margin: 0;
+        }
+    }
+
+}
+
+.bg-dark-blue {
+    background-color: $darkBlue;
+}
+
+
+footer {
+    background: $darkBlue;
+    color: #fff;
+    height: 70px;
+    padding: 19px 0 10px 0;
+
+    /*    .filler {
+        background: $darkBlue;
+        width: 100%;
+        height: 10px;
+        margin-bottom: -20px;
+        position: relative;
+        bottom: 0;
+    }*/
+    div {
+        a {
+            img {
+                position: relative;
+                margin-top: -5px;
+            }
+        }
+    }
+}

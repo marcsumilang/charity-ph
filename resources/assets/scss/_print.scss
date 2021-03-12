@@ -1,0 +1,57 @@
+@media only print {
+    html {
+        font-family: Arial, sans-serif!important;
+    }
+    footer,
+    .product,
+    .social-media,
+    .printsend,
+    .nav-tabs,
+    section h3,
+    .page-header,
+    .btn,
+    hr,
+    .logs,
+    .email-p {
+        display: none;
+    }
+    header {
+        height: 30px;
+    }
+    label {
+        font-weight: 800;
+        font-size: 12px;
+    }
+    body {
+        font-size: 11px;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    #parties {
+        margin: 0;
+        padding: 0;
+        legend {
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+    }
+    h2 {
+        text-transform: none;
+        span {
+            font-weight: 400;
+        }
+    }
+
+    .pagebreak {
+        page-break-after: always;
+    }
+
+
+
+    /*Breaker*/
+    .pagebreak {
+        page-break-after: always;
+    }
+    
+}

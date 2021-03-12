@@ -1,0 +1,561 @@
+.btn {
+    font-weight: 400;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {}
+}
+
+.btn-white {
+    cursor: pointer;
+    color: $black !important;
+    background-color: $white;
+    border: 1px solid white;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background: $black;
+        color: $white !important;
+    }
+}
+
+.btn-transparent {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 8px 10px;
+    font-size: 0.875rem;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        transition: all 0.2s ease;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+.btn-transparent-send {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 10px 54px;
+    font-weight: bold;
+    font-size: 0.875rem;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        transition: all 0.2s ease;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+.btn-submit {
+    color: #000;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 8px 10px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        transition: all 0.2s ease;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.btn-donate-header {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $white;
+    border-radius: 30px;
+    padding: 8px 30px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.2s ease;
+        background-color: $black;
+        color: #fff;
+        text-decoration: none
+    }
+}
+
+
+.btn-radius-20 {
+    border-radius: 20px;
+}
+
+/* .btn-default {
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 600;
+    padding: 8px 30px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: #fff;
+        background: #000;
+        border: 2px solid #000;
+    }
+}
+
+.btn-primary {
+    background: $darkBlue;
+    border: 1px solid $darkBlue;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    @include border-radius(30px);
+    text-transform: uppercase;
+    min-width: 310px;
+    font-size: 0.75rem;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background: #fff;
+        color: $darkBlue;
+    }
+}
+
+
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    border: 1px solid #FF0000;
+    background: #fff;
+    color: #FF0000;
+    box-shadow: none!important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: none;
+    border: 1px solid $main_color;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background: $main_color;
+        border: 1px solid $main_color;
+        color: #fff;
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+    background: $main_color;
+    border: 1px solid $main_color;
+    color: #fff;
+}
+
+.btn-tertiary {
+    background: #333640;
+    border: 1px solid #333640;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 13px 40px;    
+
+    i {
+        margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+        background: $main_color;
+        border: 1px solid $main_color;
+        color: #000;
+    }
+}
+
+.btn-backup {
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {}
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+    &:hover {}
+} */
+
+.form-control:focus {
+    border-color: #015142;
+    box-shadow: 0 1px 1px rgba(1, 81, 66, 0.075) inset, 0 0 8px rgba(1, 81, 66, 0.075);
+}
+
+.alm-reveal {
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.alm-load-more-btn {
+    display: block;
+}
+
+::-webkit-input-placeholder {
+    color: #DDDDDD;
+    // font-style: italic;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #DDDDDD;
+    // font-style: italic;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #DDDDDD;
+    // font-style: italic;
+}
+
+:-ms-input-placeholder {
+    color: #DDDDDD;
+    // font-style: italic;
+}
+
+
+/*CF7*/
+
+.wpcf7-form {
+    margin: 30px 0;
+}
+
+label {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+input[type=number],
+input[type=text],
+textarea,
+input[type=email],
+input[type=tel],
+input[type=password] {
+    min-height: 35px;
+    // margin-bottom: 15px;
+    // text-transform: uppercase;
+}
+
+input[type=number],
+select,
+input[type=text],
+textarea,
+input[type=email],
+input[type=tel],
+input[type=password] {
+    @include border-radius(0px);
+    border: none;
+    border-bottom: 2px solid $blueLine;
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    // text-transform: uppercase;
+    padding: 5px 10px;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+        color: #fff;
+    }
+}
+#contact,
+#careers {
+    input[type=number],
+    select,
+    input[type=text],
+    textarea,
+    input[type=email],
+    input[type=tel],
+    input[type=password] {
+        height: 48px;
+        border-radius: 0;
+        background: transparent;
+        color: #ffffff;
+        text-indent: 10px;
+        @include border-radius(0px);
+        border: 1px solid white;
+        width: 100%;
+        // text-transform: uppercase;
+        padding: 5px 10px;
+        color: #fff;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus {
+            color: #fff;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+            // font-style: italic;
+        }
+
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            color: #fff;
+            // font-style: italic;
+        }
+
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #fff;
+            // font-style: italic;
+        }
+
+        &:-ms-input-placeholder {
+            color: #fff;
+            // font-style: italic;
+        }
+
+    }
+    select {
+        background: $darkBlue;
+        text-indent: 5px;
+        option {
+            padding: 10px;
+        }
+    }
+    textarea {
+        min-height: 130px;
+        max-height: 130px;
+    }
+}
+
+
+
+/* textarea {
+    @include border-radius(0px);
+    border: none;
+    border-bottom: 1px solid $main-color;
+    background: #fff;
+    width: 100%;
+    min-height: 150px;
+} */
+
+.custom-radio {
+    border: #91b4fd solid 2px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+
+    &:checked,
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+        padding: 10px;
+        background: $darkBlue;
+    }
+}
+
+#donate {
+    button[type=submit] {
+        background: #91b4fd;
+        color: #fff;
+        display: block;
+        text-transform: uppercase;
+        border: #91b4fd solid 1px;
+        border-radius: 19px;
+        padding: 7px 29px;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus {
+            background: $darkBlue;
+        }
+    }
+
+}
+
+// custom radio
+input[type=radio] {
+
+    &:checked,
+    &:not(:checked) {
+        position: absolute;
+        left: -9999px;
+
+        + label {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+            img {
+                padding-left: 35px;
+                margin-top: -11px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -16px;
+                top: -3px;
+                border: 2px solid #91b4fd;
+                background: #0000;
+                border-radius: 100%;
+                width: 20px;
+                height: 20px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                background: #91b4fd;
+                border-radius: 100%;
+                left: -12px;
+                top: 1px;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+    &:not(:checked) {
+        + label {
+            &:after {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+    }
+
+    &:checked {
+        + label {
+            &:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    }
+
+}
+
+
+::selection {
+    background: $main_color;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: $main_color;
+    /* Gecko Browsers */
+}
+
+/*Lightslider*/
+.slide {
+    .lSSlideOuter .lSPager.lSpg {
+        height: 50px;
+        margin-top: -50px !important;
+
+        > li {
+            a {
+                background-color: #fff !important;
+            }
+
+            &.active {
+                a {
+                    background-color: $main_color !important;
+                }
+            }
+        }
+    }
+
+    .lSAction > a {
+        width: 28px;
+        height: 47px;
+    }
+
+    .lSAction > .lSPrev {
+        //background: url('../images/prev.svg') no-repeat;
+        left: 30px;
+    }
+
+    .lSAction > .lSNext {
+        //background: url('../images/next.svg') no-repeat;
+        right: 30px;
+    }
+}
+
+
+
+
+textarea.custom-form-control {
+    height: 130px;
+    resize: none;
+}
+
+/*Modal*/
+.modal-backdrop {
+    background: #fff;
+}

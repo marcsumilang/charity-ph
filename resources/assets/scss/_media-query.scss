@@ -1,0 +1,140 @@
+@media (max-width: 1580px) {}
+
+@media (max-width: 1378px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1180px) {}
+
+
+@media (max-width: 991px) {
+    .donate-section {
+        padding: 15vh 2em 10vh 2em;
+    }
+    #donate {
+        button[type=submit] {
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        font-size: 15px;
+    }
+
+    .footer-list {
+
+        li {
+
+            font-size: 12px;
+
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .team-container {
+        height: 1200px;
+        padding: 0 1rem;
+        overflow-y: auto;
+
+        .col {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .sub-nav {
+        padding: 19px 0;
+        margin-top: -10px;
+        span {
+            display: block;
+            width: 100%;
+            line-height: normal;
+        }
+    }
+
+    #who {
+        h4 {
+            &.article-subtitle {}
+        }
+    }
+
+    .btn {
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    #contact {
+        input[type=text],
+        textarea {
+            @include border-radius(10px);
+        }
+        textarea {
+            padding: 10px;
+        }
+    }
+
+
+    header {
+
+        //height: 64px;
+        .custom-navbar {
+            height: 90px;
+
+            .navbar-brand img {
+                height: 54px;
+            }
+        }
+    }
+
+    .sub-nav {
+        span {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .primary-section {
+        margin-top: 90px;
+    }
+
+    .h-remaining {
+        height: calc(100% - 70px);
+    }
+
+    /*Modal*/
+    .modal-dialog {
+        p {
+            font-size: 0.8rem;
+        }
+
+        .h5 {
+            font-size: 0.9rem;
+
+            strong {
+                display: block;
+            }
+        }
+    }
+    .donate-section {
+        padding: 15vh 1em 10vh 1em;
+    }
+    #donate {
+      h2 {
+        //   margin-top: 2em;
+      }  
+    }
+    footer {
+        padding: 25px 0;
+    }
+}

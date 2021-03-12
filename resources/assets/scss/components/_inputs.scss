@@ -1,0 +1,25 @@
+select.custom-form-control,
+input[type=text].custom-form-control,
+textarea.custom-form-control {
+  height: 48px;
+  border: 1px solid white;
+  border-radius: 0;
+  background: transparent;
+  color: $white;
+  text-indent: 10px;
+  &:focus {
+    color: $white;
+    border: 1px solid white;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: $white;
+  }
+}
+
+textarea.custom-form-control {
+  height: 130px;
+  resize: none;
+}
